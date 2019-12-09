@@ -4,3 +4,12 @@
 [submodule "1/1.10/frontend-example-docker"]
 	path = 1/1.10/frontend-example-docker
 	url = https://github.com/docker-hy/frontend-example-docker
+[submodule "1/1.12/frontend-example-docker"]
+	path = 1/1.12/frontend-example-docker
+	url = https://github.com/docker-hy/frontend-example-docker
+[submodule "1/1.12/backend-example-docker"]
+	path = 1/1.12/backend-example-docker
+	url = https://github.com/docker-hy/backend-example-docker
+[submodule "1/1.13/spring-example-project"]
+	path = 1/1.13/spring-example-project
+	url = https://github.com/docker-hy/spring-example-project/
