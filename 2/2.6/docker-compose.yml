@@ -1,0 +1,30 @@
+version: "3.3"
+services:
+  frontend:
+    build: "../../1/1.10/"
+    ports:
+    - "5000:5000"
+    environment:
+      API_URL: "http://localhost:8000"
+
+  backend:
+    build: "../../1/1.11/"
+    ports:
+    - "8000:8000"
+    environment:
+      FRONT_URL: "http://localhost:5000"
+      REDIS: "redis"
+      DB_USERNAME: "postgres"
+      DB_PASSWORD: "s3cretDatabase"
+      DB_HOST: "postgres"
+  redis:
+    image: "redis:5"
+  postgres:
+    image: "postgres:12"
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "s3cretDatabase"
+
+
+
+
